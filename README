@@ -1,0 +1,5 @@
+The Ocho Sports is my first foray into web applications and is a Python based news aggregation site running on Google App Engine.
+
+Uses feedparser to find recent sports updates and YouTube video query to find and display  sports related videos.
+
+live site: http://the-ocho-sports.appspot.com/
