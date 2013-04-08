@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for entry in entries %}
+    		{%if entry.GetSwfUrl()%}
+    			
+    			<tr><td><span class="video_title">{{entry.title.text}}</span><br /><br />
+    				<object width="500" height="355">
+            		<param name="movie" value="{{entry.GetSwfUrl()}}"></param>
+            		<param name="wmode" value="transparent"></param>
+            		<embed src="{{entry.GetSwfUrl()}}" type="application/x-shockwave-flash" 
+            		wmode="transparent" width="425" height="355"></embed></object>
+            		<br />
+   			{% endif %}
+  	{% endfor %}
+
+{% endblock %}

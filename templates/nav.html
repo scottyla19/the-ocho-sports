@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block nav %}
+
+	<a href="/" class="main-title">The Ocho</a>
+	<h1 style="display:inline; padding-left:50px; padding-right:20px;">{{pageTitle}}</h1>
+	{% if scoreLink %}
+	<a href="javascript:openNewWindow('{{scoreLink}}');">Check Scores</a>
+	{% endif %}
+  			<ul id="list_nav">
+  			<li><a href="/">All Sports</a></li>
+  	    	<li><a href="/collegebball">College Basketball</a></li>
+  	    	<li><a href="/probasketball">NBA</a>	</li>
+			<li><a href="/profootball">NFL</a></li>
+			<li><a href="/collegefootball">College Football</a></li>	 
+			<li><a href="/soccer">Soccer </a>	</li>
+			<li><a href="/baseball">Baseball </a>	</li>
+			<li><a href="/hockey">Hockey </a>	</li>
+			</ul>
+			<br/>
+			
+{% endblock %}

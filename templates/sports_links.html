@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block linkContent %}
+
+	
+		
+		<ul>
+		<h2> ESPN The Ocho</h2>
+		{%for l in links%}
+			<li><a href="javascript:openNewWindow('{{l.link}}');">{{l.title}}</a></li>
+			
+		{% endfor %}
+		<li> {{errorESPN}} </li>
+		</ul>
+		
+		
+		<ul>
+		<h2> Sports Illustrated The Ocho</h2>
+		{%for l in linksSI%}
+			<li><a href="javascript:openNewWindow('{{l.link}}');">{{l.title}}</a></li>
+			
+		{% endfor %}
+		<li> {{errorSI}} </li>
+		</ul>
+		
+		<ul>
+		<h2> CBS The Ocho</h2>
+		{%for l in linksCBS%}
+			
+			<li><a href="javascript:openNewWindow('{{l.link}}');">{{l.title}}</a></li>
+			
+		{% endfor %}
+		<li> {{errorCBS}} </li>
+		</ul>
+		
+	
+{% endblock %}

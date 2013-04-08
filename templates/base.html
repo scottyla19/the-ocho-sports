@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<link type="text/css" rel="stylesheet" href="/stylesheets/template.css" />
+		<title>The Ocho</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript">
+			function openNewWindow(url) 
+ 			{
+ 				popupWin = window.open(url,'open_window','location=1,status=1,scrollbars=1, width=750, height=650, left=0, top=75')
+ 			}
+ 		</script>
+
+</head>
+	<body>
+  
+  <div class="nav-bar"> 
+  	{% block nav %}  
+	{% endblock %}
+  </div>
+  
+  <div id="video_content">
+  	{% block content %}
+  	{% endblock %}
+  </div>
+  <div id="text_content">
+  	{% block linkContent %}
+  	{% endblock %}
+  </div>
+</body>
+
+</html>
